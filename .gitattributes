@@ -1,0 +1,2 @@
+metadata/inat_metadata.csv filter=lfs diff=lfs merge=lfs -text
+metadata/taxa.csv filter=lfs diff=lfs merge=lfs -text
