@@ -1,0 +1,219 @@
+ExplicitMaxout parameters: 227,414,520
+ExplicitMaxout parameters: 303,255,032
+['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+['cangoo', 'snogoo', 'tunswa', 'wooduc', 'mallar3', 'moudov', 'killde', 'amewoo', 'solsan', 'ribgul']
+[1743, 755, 3881, 329, 649, 14627, 2582, 12450, 13959, 6880, 8963, 1100, 1283, 13098, 7712, 7800, 12813, 4357, 4362, 3179, 4367, 12327, 3359, 4645, 14207, 8417, 14424, 14411, 14409, 14430, 3799, 3437, 3439, 1651, 1439, 10741, 13317, 3432, 11964, 13985, 12681, 12680, 2467, 4432, 13144, 12637, 6267, 14115, 5820, 5819, 7420, 12844, 12838, 6644, 14667, 7941, 7939, 10474, 4280, 6426, 279, 8226, 4921, 11820, 12521, 9689, 14359, 6930, 5478, 12591, 12611, 12597, 12605, 12604, 12592, 12616, 10500, 10072, 2247, 2324, 2322]
+
+??  WARNING: Dimension mismatch!
+   Audio samples: 205200
+   Label samples: 90896
+   Total labels from batches: 90896
+(205200, 1536)
+(205200, 165)
+(205200, 81)
+Dataset using numpy arrays
+205200
+Class 0 (pretrain 1743): AUROC=0.949, AP=0.735, positives=5310.0
+Class 1 (pretrain 755): AUROC=0.979, AP=0.418, positives=123.0
+Class 2 (pretrain 3881): AUROC=0.967, AP=0.275, positives=6.0
+Class 3 (pretrain 329): AUROC=0.883, AP=0.290, positives=133.0
+Class 4 (pretrain 649): AUROC=0.970, AP=0.597, positives=158.0
+Class 5 (pretrain 14627): AUROC=0.960, AP=0.428, positives=145.0
+Class 6 (pretrain 2582): AUROC=0.984, AP=0.523, positives=32.0
+Class 7 (pretrain 12450): AUROC=0.730, AP=0.184, positives=103.0
+Class 8 (pretrain 13959): AUROC=0.961, AP=0.234, positives=10.0
+Class 9 (pretrain 6880): AUROC=0.981, AP=0.531, positives=10.0
+Class 10 (pretrain 8963): AUROC=1.000, AP=1.000, positives=1.0
+Class 11 (pretrain 1100): AUROC=0.971, AP=0.162, positives=9.0
+Class 12 (pretrain 1283): AUROC=0.137, AP=0.000, positives=34.0
+Class 13 (pretrain 13098): AUROC=0.976, AP=0.595, positives=33.0
+Class 14 (pretrain 7712): AUROC=0.932, AP=0.564, positives=98.0
+Class 15 (pretrain 7800): AUROC=0.892, AP=0.474, positives=906.0
+Class 16 (pretrain 12813): AUROC=0.894, AP=0.282, positives=357.0
+Class 17 (pretrain 4357): AUROC=0.919, AP=0.327, positives=603.0
+Class 18 (pretrain 4362): AUROC=0.595, AP=0.001, positives=193.0
+Class 19 (pretrain 3179): AUROC=0.969, AP=0.686, positives=909.0
+Class 20 (pretrain 4367): AUROC=0.861, AP=0.311, positives=225.0
+Class 21 (pretrain 12327): AUROC=0.966, AP=0.684, positives=917.0
+Class 22 (pretrain 3359): AUROC=0.939, AP=0.523, positives=3178.0
+Class 23 (pretrain 4645): AUROC=0.943, AP=0.532, positives=701.0
+Class 24 (pretrain 14207): AUROC=0.953, AP=0.523, positives=407.0
+Class 25 (pretrain 8417): AUROC=0.917, AP=0.504, positives=1326.0
+Class 26 (pretrain 14424): AUROC=0.982, AP=0.825, positives=8888.0
+Class 27 (pretrain 14411): AUROC=0.979, AP=0.144, positives=29.0
+Class 28 (pretrain 14409): AUROC=0.989, AP=0.756, positives=231.0
+Class 29 (pretrain 14430): AUROC=0.947, AP=0.180, positives=103.0
+Class 30 (pretrain 3799): AUROC=0.941, AP=0.695, positives=3427.0
+Class 31 (pretrain 3437): AUROC=0.952, AP=0.728, positives=3861.0
+Class 32 (pretrain 3439): AUROC=0.982, AP=0.022, positives=6.0
+Class 33 (pretrain 1651): AUROC=0.962, AP=0.549, positives=509.0
+Class 34 (pretrain 1439): AUROC=0.901, AP=0.404, positives=2585.0
+Class 35 (pretrain 10741): AUROC=0.959, AP=0.721, positives=7794.0
+Class 36 (pretrain 13317): AUROC=0.958, AP=0.059, positives=6.0
+Class 37 (pretrain 3432): AUROC=1.000, AP=1.000, positives=2.0
+Class 38 (pretrain 11964): AUROC=0.956, AP=0.124, positives=86.0
+Class 39 (pretrain 13985): AUROC=0.969, AP=0.298, positives=92.0
+Class 40 (pretrain 12681): AUROC=0.908, AP=0.406, positives=677.0
+Class 41 (pretrain 12680): AUROC=0.997, AP=0.009, positives=3.0
+Class 42 (pretrain 2467): AUROC=0.951, AP=0.435, positives=196.0
+Class 43 (pretrain 4432): AUROC=0.934, AP=0.669, positives=9627.0
+Class 44 (pretrain 13144): AUROC=0.973, AP=0.114, positives=96.0
+Class 45 (pretrain 12637): AUROC=0.967, AP=0.011, positives=8.0
+Class 46 (pretrain 6267): AUROC=0.954, AP=0.693, positives=4678.0
+Class 47 (pretrain 14115): AUROC=0.870, AP=0.377, positives=3189.0
+Class 48 (pretrain 5820): AUROC=0.961, AP=0.317, positives=78.0
+Class 49 (pretrain 5819): AUROC=0.901, AP=0.091, positives=12.0
+Class 50 (pretrain 7420): AUROC=0.997, AP=0.028, positives=3.0
+Class 51 (pretrain 12844): AUROC=0.896, AP=0.441, positives=3030.0
+Class 52 (pretrain 12838): AUROC=0.966, AP=0.000, positives=2.0
+Class 53 (pretrain 6644): AUROC=0.183, AP=0.000, positives=6.0
+Class 54 (pretrain 14667): AUROC=0.998, AP=0.499, positives=68.0
+Class 55 (pretrain 7941): AUROC=0.902, AP=0.360, positives=2173.0
+Class 56 (pretrain 7939): AUROC=0.971, AP=0.548, positives=612.0
+Class 57 (pretrain 10474): AUROC=0.932, AP=0.361, positives=681.0
+Class 58 (pretrain 4280): AUROC=0.970, AP=0.038, positives=7.0
+Class 59 (pretrain 6426): AUROC=0.936, AP=0.262, positives=890.0
+Class 60 (pretrain 279): AUROC=0.906, AP=0.596, positives=6480.0
+Class 61 (pretrain 8226): AUROC=0.917, AP=0.049, positives=97.0
+Class 62 (pretrain 4921): AUROC=0.973, AP=0.159, positives=28.0
+Class 63 (pretrain 11820): AUROC=0.949, AP=0.393, positives=1254.0
+Class 64 (pretrain 12521): AUROC=0.978, AP=0.777, positives=3579.0
+Class 65 (pretrain 9689): AUROC=0.967, AP=0.676, positives=224.0
+Class 66 (pretrain 14359): AUROC=0.952, AP=0.474, positives=117.0
+Class 67 (pretrain 6930): AUROC=0.904, AP=0.016, positives=5.0
+Class 68 (pretrain 5478): AUROC=0.951, AP=0.553, positives=2292.0
+Class 69 (pretrain 12591): AUROC=0.966, AP=0.023, positives=14.0
+Class 70 (pretrain 12611): AUROC=0.906, AP=0.000, positives=2.0
+Class 71 (pretrain 12597): AUROC=0.990, AP=0.054, positives=21.0
+Class 72 (pretrain 12605): AUROC=0.984, AP=0.260, positives=353.0
+Class 73 (pretrain 12604): AUROC=0.983, AP=0.431, positives=298.0
+Class 74 (pretrain 12592): AUROC=0.954, AP=0.020, positives=17.0
+Class 75 (pretrain 12616): AUROC=0.978, AP=0.042, positives=6.0
+Class 76 (pretrain 10500): AUROC=0.941, AP=0.395, positives=906.0
+Class 77 (pretrain 10072): AUROC=0.994, AP=0.380, positives=14.0
+Class 78 (pretrain 2247): AUROC=0.909, AP=0.541, positives=3781.0
+Class 79 (pretrain 2324): AUROC=0.999, AP=0.119, positives=3.0
+Class 80 (pretrain 2322): AUROC=0.968, AP=0.637, positives=1823.0
+Audio-only scores: {'macro_auroc': np.float64(0.9251764778875423), 'cmap': np.float64(0.372178975916761), 'micro_auroc': 0.9438820237610986, 'micro_map': 0.5250608376793826, 'auroc_per_class': [0.9492150762957292, 0.9785355855431023, 0.966671377655617, 0.883480773989473, 0.9695114332241163, 0.959939377072089, 0.9835345302386338, 0.730248050756566, 0.9611964520688142, 0.9809483892977241, 1.0, 0.9705347700435204, 0.13692828934504112, 0.9764356043436012, 0.9320974989248754, 0.8924716631925798, 0.8944934817949187, 0.9190018218965113, 0.5948957865737986, 0.9688198771269992, 0.8606404033012158, 0.9661260192583246, 0.9386688550746913, 0.9434083675731537, 0.9532092638253493, 0.9165444081179233, 0.9815038797881173, 0.9792774202309629, 0.9891509937760834, 0.9469802851040268, 0.9408320125368446, 0.9518119083180994, 0.9816693795465105, 0.9618800561321436, 0.9010954268108886, 0.9590254438273282, 0.9576392747026391, 1.0, 0.9555477203714963, 0.9688699792092564, 0.9075478728033759, 0.9970304958974384, 0.9510468735503022, 0.9342203136351467, 0.9731660523441766, 0.9671460144645015, 0.9538023501286694, 0.8698451944965867, 0.9606203400152855, 0.9005444600398984, 0.9972952820947675, 0.8955685474319802, 0.9663666312537159, 0.1829293254188719, 0.9978249657896036, 0.902308451145525, 0.9708427121378072, 0.9320217756157909, 0.9697058727288803, 0.9364753632258537, 0.9063770635927964, 0.9174110458255549, 0.9730277697318765, 0.9494888732078453, 0.9783602864971083, 0.9674169824411499, 0.9517518048039837, 0.9043914325397793, 0.950601905579093, 0.9655878429466783, 0.9056033684538836, 0.989731033924153, 0.9842327841973567, 0.9827257247023113, 0.953985409294601, 0.9781816232443444, 0.941487761621129, 0.9937246832490659, 0.9089073444435402, 0.9992901130783264, 0.9678600244094051], 'ap_per_class': [0.7354804161112868, 0.41755086003713365, 0.27512601143379345, 0.29015821594329444, 0.5968406005293061, 0.4284142300181843, 0.523311586806161, 0.18418187596976301, 0.233855595701252, 0.5306203202333883, 1.0, 0.16215118672054832, 9.30213230414969e-05, 0.5951228481420014, 0.5638024396130836, 0.4740905413394934, 0.28221942491253543, 0.32655372853128095, 0.001221597081147525, 0.685572946834319, 0.3110308197130094, 0.6837442656055062, 0.5232984164528421, 0.5324397143305603, 0.5225247779735043, 0.5038116241237915, 0.8249524490638697, 0.1440845374736322, 0.7558429815113352, 0.17971816817073116, 0.6945065755217684, 0.7276234596461706, 0.02154464978695593, 0.5494994093077985, 0.40441031936324234, 0.7207017574185978, 0.05921376170289392, 1.0, 0.12417252377399161, 0.29840186923800943, 0.4055775410177898, 0.008858156830546821, 0.4354238463386861, 0.6691198946824449, 0.11401724183572291, 0.011326068047521566, 0.6934998132025504, 0.3769877477216974, 0.3170724545452639, 0.09129816345022339, 0.02829381145170619, 0.4408665702083953, 0.00038529420562984236, 2.008527906794964e-05, 0.4994451649674568, 0.3604415492201164, 0.5481045056268161, 0.36138320311841, 0.03810690954181078, 0.2621846801268504, 0.5955377630833124, 0.04895312580137454, 0.1594417191160444, 0.3925151401252535, 0.7765735527996679, 0.6763289958693235, 0.4743369081087229, 0.01618278161539511, 0.5526243895683881, 0.023338795742816124, 7.545415930943213e-05, 0.054122760936599165, 0.2595132122380858, 0.4314009619960597, 0.02038642615477368, 0.042485858606364696, 0.3945036786452955, 0.38024606426910007, 0.5413758065240343, 0.11881119896446245, 0.6374402260553287], 'class_info': [{'class_idx': 0, 'pretrain_idx': 1743, 'n_positives': np.float32(5310.0), 'auroc': 0.9492150762957292, 'ap': 0.7354804161112868}, {'class_idx': 1, 'pretrain_idx': 755, 'n_positives': np.float32(123.0), 'auroc': 0.9785355855431023, 'ap': 0.41755086003713365}, {'class_idx': 2, 'pretrain_idx': 3881, 'n_positives': np.float32(6.0), 'auroc': 0.966671377655617, 'ap': 0.27512601143379345}, {'class_idx': 3, 'pretrain_idx': 329, 'n_positives': np.float32(133.0), 'auroc': 0.883480773989473, 'ap': 0.29015821594329444}, {'class_idx': 4, 'pretrain_idx': 649, 'n_positives': np.float32(158.0), 'auroc': 0.9695114332241163, 'ap': 0.5968406005293061}, {'class_idx': 5, 'pretrain_idx': 14627, 'n_positives': np.float32(145.0), 'auroc': 0.959939377072089, 'ap': 0.4284142300181843}, {'class_idx': 6, 'pretrain_idx': 2582, 'n_positives': np.float32(32.0), 'auroc': 0.9835345302386338, 'ap': 0.523311586806161}, {'class_idx': 7, 'pretrain_idx': 12450, 'n_positives': np.float32(103.0), 'auroc': 0.730248050756566, 'ap': 0.18418187596976301}, {'class_idx': 8, 'pretrain_idx': 13959, 'n_positives': np.float32(10.0), 'auroc': 0.9611964520688142, 'ap': 0.233855595701252}, {'class_idx': 9, 'pretrain_idx': 6880, 'n_positives': np.float32(10.0), 'auroc': 0.9809483892977241, 'ap': 0.5306203202333883}, {'class_idx': 10, 'pretrain_idx': 8963, 'n_positives': np.float32(1.0), 'auroc': 1.0, 'ap': 1.0}, {'class_idx': 11, 'pretrain_idx': 1100, 'n_positives': np.float32(9.0), 'auroc': 0.9705347700435204, 'ap': 0.16215118672054832}, {'class_idx': 12, 'pretrain_idx': 1283, 'n_positives': np.float32(34.0), 'auroc': 0.13692828934504112, 'ap': 9.30213230414969e-05}, {'class_idx': 13, 'pretrain_idx': 13098, 'n_positives': np.float32(33.0), 'auroc': 0.9764356043436012, 'ap': 0.5951228481420014}, {'class_idx': 14, 'pretrain_idx': 7712, 'n_positives': np.float32(98.0), 'auroc': 0.9320974989248754, 'ap': 0.5638024396130836}, {'class_idx': 15, 'pretrain_idx': 7800, 'n_positives': np.float32(906.0), 'auroc': 0.8924716631925798, 'ap': 0.4740905413394934}, {'class_idx': 16, 'pretrain_idx': 12813, 'n_positives': np.float32(357.0), 'auroc': 0.8944934817949187, 'ap': 0.28221942491253543}, {'class_idx': 17, 'pretrain_idx': 4357, 'n_positives': np.float32(603.0), 'auroc': 0.9190018218965113, 'ap': 0.32655372853128095}, {'class_idx': 18, 'pretrain_idx': 4362, 'n_positives': np.float32(193.0), 'auroc': 0.5948957865737986, 'ap': 0.001221597081147525}, {'class_idx': 19, 'pretrain_idx': 3179, 'n_positives': np.float32(909.0), 'auroc': 0.9688198771269992, 'ap': 0.685572946834319}, {'class_idx': 20, 'pretrain_idx': 4367, 'n_positives': np.float32(225.0), 'auroc': 0.8606404033012158, 'ap': 0.3110308197130094}, {'class_idx': 21, 'pretrain_idx': 12327, 'n_positives': np.float32(917.0), 'auroc': 0.9661260192583246, 'ap': 0.6837442656055062}, {'class_idx': 22, 'pretrain_idx': 3359, 'n_positives': np.float32(3178.0), 'auroc': 0.9386688550746913, 'ap': 0.5232984164528421}, {'class_idx': 23, 'pretrain_idx': 4645, 'n_positives': np.float32(701.0), 'auroc': 0.9434083675731537, 'ap': 0.5324397143305603}, {'class_idx': 24, 'pretrain_idx': 14207, 'n_positives': np.float32(407.0), 'auroc': 0.9532092638253493, 'ap': 0.5225247779735043}, {'class_idx': 25, 'pretrain_idx': 8417, 'n_positives': np.float32(1326.0), 'auroc': 0.9165444081179233, 'ap': 0.5038116241237915}, {'class_idx': 26, 'pretrain_idx': 14424, 'n_positives': np.float32(8888.0), 'auroc': 0.9815038797881173, 'ap': 0.8249524490638697}, {'class_idx': 27, 'pretrain_idx': 14411, 'n_positives': np.float32(29.0), 'auroc': 0.9792774202309629, 'ap': 0.1440845374736322}, {'class_idx': 28, 'pretrain_idx': 14409, 'n_positives': np.float32(231.0), 'auroc': 0.9891509937760834, 'ap': 0.7558429815113352}, {'class_idx': 29, 'pretrain_idx': 14430, 'n_positives': np.float32(103.0), 'auroc': 0.9469802851040268, 'ap': 0.17971816817073116}, {'class_idx': 30, 'pretrain_idx': 3799, 'n_positives': np.float32(3427.0), 'auroc': 0.9408320125368446, 'ap': 0.6945065755217684}, {'class_idx': 31, 'pretrain_idx': 3437, 'n_positives': np.float32(3861.0), 'auroc': 0.9518119083180994, 'ap': 0.7276234596461706}, {'class_idx': 32, 'pretrain_idx': 3439, 'n_positives': np.float32(6.0), 'auroc': 0.9816693795465105, 'ap': 0.02154464978695593}, {'class_idx': 33, 'pretrain_idx': 1651, 'n_positives': np.float32(509.0), 'auroc': 0.9618800561321436, 'ap': 0.5494994093077985}, {'class_idx': 34, 'pretrain_idx': 1439, 'n_positives': np.float32(2585.0), 'auroc': 0.9010954268108886, 'ap': 0.40441031936324234}, {'class_idx': 35, 'pretrain_idx': 10741, 'n_positives': np.float32(7794.0), 'auroc': 0.9590254438273282, 'ap': 0.7207017574185978}, {'class_idx': 36, 'pretrain_idx': 13317, 'n_positives': np.float32(6.0), 'auroc': 0.9576392747026391, 'ap': 0.05921376170289392}, {'class_idx': 37, 'pretrain_idx': 3432, 'n_positives': np.float32(2.0), 'auroc': 1.0, 'ap': 1.0}, {'class_idx': 38, 'pretrain_idx': 11964, 'n_positives': np.float32(86.0), 'auroc': 0.9555477203714963, 'ap': 0.12417252377399161}, {'class_idx': 39, 'pretrain_idx': 13985, 'n_positives': np.float32(92.0), 'auroc': 0.9688699792092564, 'ap': 0.29840186923800943}, {'class_idx': 40, 'pretrain_idx': 12681, 'n_positives': np.float32(677.0), 'auroc': 0.9075478728033759, 'ap': 0.4055775410177898}, {'class_idx': 41, 'pretrain_idx': 12680, 'n_positives': np.float32(3.0), 'auroc': 0.9970304958974384, 'ap': 0.008858156830546821}, {'class_idx': 42, 'pretrain_idx': 2467, 'n_positives': np.float32(196.0), 'auroc': 0.9510468735503022, 'ap': 0.4354238463386861}, {'class_idx': 43, 'pretrain_idx': 4432, 'n_positives': np.float32(9627.0), 'auroc': 0.9342203136351467, 'ap': 0.6691198946824449}, {'class_idx': 44, 'pretrain_idx': 13144, 'n_positives': np.float32(96.0), 'auroc': 0.9731660523441766, 'ap': 0.11401724183572291}, {'class_idx': 45, 'pretrain_idx': 12637, 'n_positives': np.float32(8.0), 'auroc': 0.9671460144645015, 'ap': 0.011326068047521566}, {'class_idx': 46, 'pretrain_idx': 6267, 'n_positives': np.float32(4678.0), 'auroc': 0.9538023501286694, 'ap': 0.6934998132025504}, {'class_idx': 47, 'pretrain_idx': 14115, 'n_positives': np.float32(3189.0), 'auroc': 0.8698451944965867, 'ap': 0.3769877477216974}, {'class_idx': 48, 'pretrain_idx': 5820, 'n_positives': np.float32(78.0), 'auroc': 0.9606203400152855, 'ap': 0.3170724545452639}, {'class_idx': 49, 'pretrain_idx': 5819, 'n_positives': np.float32(12.0), 'auroc': 0.9005444600398984, 'ap': 0.09129816345022339}, {'class_idx': 50, 'pretrain_idx': 7420, 'n_positives': np.float32(3.0), 'auroc': 0.9972952820947675, 'ap': 0.02829381145170619}, {'class_idx': 51, 'pretrain_idx': 12844, 'n_positives': np.float32(3030.0), 'auroc': 0.8955685474319802, 'ap': 0.4408665702083953}, {'class_idx': 52, 'pretrain_idx': 12838, 'n_positives': np.float32(2.0), 'auroc': 0.9663666312537159, 'ap': 0.00038529420562984236}, {'class_idx': 53, 'pretrain_idx': 6644, 'n_positives': np.float32(6.0), 'auroc': 0.1829293254188719, 'ap': 2.008527906794964e-05}, {'class_idx': 54, 'pretrain_idx': 14667, 'n_positives': np.float32(68.0), 'auroc': 0.9978249657896036, 'ap': 0.4994451649674568}, {'class_idx': 55, 'pretrain_idx': 7941, 'n_positives': np.float32(2173.0), 'auroc': 0.902308451145525, 'ap': 0.3604415492201164}, {'class_idx': 56, 'pretrain_idx': 7939, 'n_positives': np.float32(612.0), 'auroc': 0.9708427121378072, 'ap': 0.5481045056268161}, {'class_idx': 57, 'pretrain_idx': 10474, 'n_positives': np.float32(681.0), 'auroc': 0.9320217756157909, 'ap': 0.36138320311841}, {'class_idx': 58, 'pretrain_idx': 4280, 'n_positives': np.float32(7.0), 'auroc': 0.9697058727288803, 'ap': 0.03810690954181078}, {'class_idx': 59, 'pretrain_idx': 6426, 'n_positives': np.float32(890.0), 'auroc': 0.9364753632258537, 'ap': 0.2621846801268504}, {'class_idx': 60, 'pretrain_idx': 279, 'n_positives': np.float32(6480.0), 'auroc': 0.9063770635927964, 'ap': 0.5955377630833124}, {'class_idx': 61, 'pretrain_idx': 8226, 'n_positives': np.float32(97.0), 'auroc': 0.9174110458255549, 'ap': 0.04895312580137454}, {'class_idx': 62, 'pretrain_idx': 4921, 'n_positives': np.float32(28.0), 'auroc': 0.9730277697318765, 'ap': 0.1594417191160444}, {'class_idx': 63, 'pretrain_idx': 11820, 'n_positives': np.float32(1254.0), 'auroc': 0.9494888732078453, 'ap': 0.3925151401252535}, {'class_idx': 64, 'pretrain_idx': 12521, 'n_positives': np.float32(3579.0), 'auroc': 0.9783602864971083, 'ap': 0.7765735527996679}, {'class_idx': 65, 'pretrain_idx': 9689, 'n_positives': np.float32(224.0), 'auroc': 0.9674169824411499, 'ap': 0.6763289958693235}, {'class_idx': 66, 'pretrain_idx': 14359, 'n_positives': np.float32(117.0), 'auroc': 0.9517518048039837, 'ap': 0.4743369081087229}, {'class_idx': 67, 'pretrain_idx': 6930, 'n_positives': np.float32(5.0), 'auroc': 0.9043914325397793, 'ap': 0.01618278161539511}, {'class_idx': 68, 'pretrain_idx': 5478, 'n_positives': np.float32(2292.0), 'auroc': 0.950601905579093, 'ap': 0.5526243895683881}, {'class_idx': 69, 'pretrain_idx': 12591, 'n_positives': np.float32(14.0), 'auroc': 0.9655878429466783, 'ap': 0.023338795742816124}, {'class_idx': 70, 'pretrain_idx': 12611, 'n_positives': np.float32(2.0), 'auroc': 0.9056033684538836, 'ap': 7.545415930943213e-05}, {'class_idx': 71, 'pretrain_idx': 12597, 'n_positives': np.float32(21.0), 'auroc': 0.989731033924153, 'ap': 0.054122760936599165}, {'class_idx': 72, 'pretrain_idx': 12605, 'n_positives': np.float32(353.0), 'auroc': 0.9842327841973567, 'ap': 0.2595132122380858}, {'class_idx': 73, 'pretrain_idx': 12604, 'n_positives': np.float32(298.0), 'auroc': 0.9827257247023113, 'ap': 0.4314009619960597}, {'class_idx': 74, 'pretrain_idx': 12592, 'n_positives': np.float32(17.0), 'auroc': 0.953985409294601, 'ap': 0.02038642615477368}, {'class_idx': 75, 'pretrain_idx': 12616, 'n_positives': np.float32(6.0), 'auroc': 0.9781816232443444, 'ap': 0.042485858606364696}, {'class_idx': 76, 'pretrain_idx': 10500, 'n_positives': np.float32(906.0), 'auroc': 0.941487761621129, 'ap': 0.3945036786452955}, {'class_idx': 77, 'pretrain_idx': 10072, 'n_positives': np.float32(14.0), 'auroc': 0.9937246832490659, 'ap': 0.38024606426910007}, {'class_idx': 78, 'pretrain_idx': 2247, 'n_positives': np.float32(3781.0), 'auroc': 0.9089073444435402, 'ap': 0.5413758065240343}, {'class_idx': 79, 'pretrain_idx': 2324, 'n_positives': np.float32(3.0), 'auroc': 0.9992901130783264, 'ap': 0.11881119896446245}, {'class_idx': 80, 'pretrain_idx': 2322, 'n_positives': np.float32(1823.0), 'auroc': 0.9678600244094051, 'ap': 0.6374402260553287}], 'n_valid_classes': 81, 'all_probs': array([[0.9685957 , 0.6323903 , 0.6530324 , ..., 0.992576  , 0.9760474 ,
+        0.9601409 ],
+       [0.6696356 , 0.6716354 , 0.9297003 , ..., 0.77985436, 0.6090955 ,
+        0.5906847 ],
+       [0.5886929 , 0.42842224, 0.72033536, ..., 0.85090494, 0.78152794,
+        0.6815912 ],
+       ...,
+       [0.96981376, 0.658304  , 0.57274944, ..., 0.9961402 , 0.8791518 ,
+        0.83746105],
+       [0.8741639 , 0.6834145 , 0.66490906, ..., 0.87795746, 0.9248875 ,
+        0.78209597],
+       [0.75276256, 0.35971454, 0.2773663 , ..., 0.9238189 , 0.60699177,
+        0.7785233 ]], dtype=float32), 'all_labels': array([[0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       ...,
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.]], dtype=float32)}
+Class 0 (pretrain 1743): AUROC=0.970, AP=0.798, positives=5310.0
+Class 1 (pretrain 755): AUROC=0.986, AP=0.434, positives=123.0
+Class 2 (pretrain 3881): AUROC=0.987, AP=0.241, positives=6.0
+Class 3 (pretrain 329): AUROC=0.923, AP=0.333, positives=133.0
+Class 4 (pretrain 649): AUROC=0.983, AP=0.644, positives=158.0
+Class 5 (pretrain 14627): AUROC=0.971, AP=0.466, positives=145.0
+Class 6 (pretrain 2582): AUROC=0.976, AP=0.571, positives=32.0
+Class 7 (pretrain 12450): AUROC=0.831, AP=0.230, positives=103.0
+Class 8 (pretrain 13959): AUROC=0.927, AP=0.291, positives=10.0
+Class 9 (pretrain 6880): AUROC=0.999, AP=0.552, positives=10.0
+Class 10 (pretrain 8963): AUROC=1.000, AP=0.111, positives=1.0
+Class 11 (pretrain 1100): AUROC=0.997, AP=0.270, positives=9.0
+Class 12 (pretrain 1283): AUROC=0.062, AP=0.000, positives=34.0
+Class 13 (pretrain 13098): AUROC=0.925, AP=0.596, positives=33.0
+Class 14 (pretrain 7712): AUROC=0.963, AP=0.636, positives=98.0
+Class 15 (pretrain 7800): AUROC=0.950, AP=0.623, positives=906.0
+Class 16 (pretrain 12813): AUROC=0.937, AP=0.474, positives=357.0
+Class 17 (pretrain 4357): AUROC=0.955, AP=0.440, positives=603.0
+Class 18 (pretrain 4362): AUROC=0.652, AP=0.001, positives=193.0
+Class 19 (pretrain 3179): AUROC=0.978, AP=0.719, positives=909.0
+Class 20 (pretrain 4367): AUROC=0.891, AP=0.399, positives=225.0
+Class 21 (pretrain 12327): AUROC=0.981, AP=0.723, positives=917.0
+Class 22 (pretrain 3359): AUROC=0.967, AP=0.635, positives=3178.0
+Class 23 (pretrain 4645): AUROC=0.977, AP=0.692, positives=701.0
+Class 24 (pretrain 14207): AUROC=0.988, AP=0.651, positives=407.0
+Class 25 (pretrain 8417): AUROC=0.931, AP=0.643, positives=1326.0
+Class 26 (pretrain 14424): AUROC=0.987, AP=0.859, positives=8888.0
+Class 27 (pretrain 14411): AUROC=0.982, AP=0.155, positives=29.0
+Class 28 (pretrain 14409): AUROC=0.985, AP=0.711, positives=231.0
+Class 29 (pretrain 14430): AUROC=0.939, AP=0.180, positives=103.0
+Class 30 (pretrain 3799): AUROC=0.965, AP=0.755, positives=3427.0
+Class 31 (pretrain 3437): AUROC=0.968, AP=0.775, positives=3861.0
+Class 32 (pretrain 3439): AUROC=0.993, AP=0.038, positives=6.0
+Class 33 (pretrain 1651): AUROC=0.982, AP=0.564, positives=509.0
+Class 34 (pretrain 1439): AUROC=0.949, AP=0.552, positives=2585.0
+Class 35 (pretrain 10741): AUROC=0.974, AP=0.754, positives=7794.0
+Class 36 (pretrain 13317): AUROC=0.998, AP=0.129, positives=6.0
+Class 37 (pretrain 3432): AUROC=1.000, AP=1.000, positives=2.0
+Class 38 (pretrain 11964): AUROC=0.989, AP=0.276, positives=86.0
+Class 39 (pretrain 13985): AUROC=0.955, AP=0.289, positives=92.0
+Class 40 (pretrain 12681): AUROC=0.931, AP=0.598, positives=677.0
+Class 41 (pretrain 12680): AUROC=0.998, AP=0.008, positives=3.0
+Class 42 (pretrain 2467): AUROC=0.986, AP=0.657, positives=196.0
+Class 43 (pretrain 4432): AUROC=0.953, AP=0.719, positives=9627.0
+Class 44 (pretrain 13144): AUROC=0.975, AP=0.107, positives=96.0
+Class 45 (pretrain 12637): AUROC=0.954, AP=0.014, positives=8.0
+Class 46 (pretrain 6267): AUROC=0.971, AP=0.773, positives=4678.0
+Class 47 (pretrain 14115): AUROC=0.909, AP=0.462, positives=3189.0
+Class 48 (pretrain 5820): AUROC=0.957, AP=0.351, positives=78.0
+Class 49 (pretrain 5819): AUROC=0.949, AP=0.099, positives=12.0
+Class 50 (pretrain 7420): AUROC=0.996, AP=0.066, positives=3.0
+Class 51 (pretrain 12844): AUROC=0.932, AP=0.574, positives=3030.0
+Class 52 (pretrain 12838): AUROC=0.913, AP=0.003, positives=2.0
+Class 53 (pretrain 6644): AUROC=0.614, AP=0.000, positives=6.0
+Class 54 (pretrain 14667): AUROC=0.999, AP=0.553, positives=68.0
+Class 55 (pretrain 7941): AUROC=0.930, AP=0.454, positives=2173.0
+Class 56 (pretrain 7939): AUROC=0.975, AP=0.571, positives=612.0
+Class 57 (pretrain 10474): AUROC=0.961, AP=0.434, positives=681.0
+Class 58 (pretrain 4280): AUROC=0.930, AP=0.012, positives=7.0
+Class 59 (pretrain 6426): AUROC=0.973, AP=0.370, positives=890.0
+Class 60 (pretrain 279): AUROC=0.947, AP=0.663, positives=6480.0
+Class 61 (pretrain 8226): AUROC=0.975, AP=0.037, positives=97.0
+Class 62 (pretrain 4921): AUROC=0.989, AP=0.163, positives=28.0
+Class 63 (pretrain 11820): AUROC=0.976, AP=0.464, positives=1254.0
+Class 64 (pretrain 12521): AUROC=0.983, AP=0.819, positives=3579.0
+Class 65 (pretrain 9689): AUROC=0.967, AP=0.742, positives=224.0
+Class 66 (pretrain 14359): AUROC=0.988, AP=0.722, positives=117.0
+Class 67 (pretrain 6930): AUROC=0.859, AP=0.020, positives=5.0
+Class 68 (pretrain 5478): AUROC=0.967, AP=0.642, positives=2292.0
+Class 69 (pretrain 12591): AUROC=0.995, AP=0.676, positives=14.0
+Class 70 (pretrain 12611): AUROC=0.934, AP=0.000, positives=2.0
+Class 71 (pretrain 12597): AUROC=0.985, AP=0.067, positives=21.0
+Class 72 (pretrain 12605): AUROC=0.967, AP=0.213, positives=353.0
+Class 73 (pretrain 12604): AUROC=0.987, AP=0.508, positives=298.0
+Class 74 (pretrain 12592): AUROC=0.959, AP=0.024, positives=17.0
+Class 75 (pretrain 12616): AUROC=0.971, AP=0.019, positives=6.0
+Class 76 (pretrain 10500): AUROC=0.968, AP=0.554, positives=906.0
+Class 77 (pretrain 10072): AUROC=0.991, AP=0.544, positives=14.0
+Class 78 (pretrain 2247): AUROC=0.940, AP=0.595, positives=3781.0
+Class 79 (pretrain 2324): AUROC=0.997, AP=0.015, positives=3.0
+Class 80 (pretrain 2322): AUROC=0.979, AP=0.732, positives=1823.0
+Spatiotemporally-aware scores: {'macro_auroc': np.float64(0.9444529916438207), 'cmap': np.float64(0.42292688015884883), 'micro_auroc': 0.9618764353892574, 'micro_map': 0.5506748995879489, 'auroc_per_class': [0.9699256643884834, 0.9863510319007285, 0.9866987663706865, 0.9227513611817535, 0.9829624748693043, 0.9714270603597521, 0.9757659728856352, 0.8313529459018467, 0.9269267508163166, 0.9985052877820557, 0.9999610134552313, 0.9969789664805527, 0.061787843531005866, 0.9247137328334597, 0.9626263358460371, 0.9499364186241482, 0.9367654884041754, 0.9550996303528894, 0.6520455348535932, 0.9783547427780748, 0.890504511390278, 0.9810363438822395, 0.9668954103404138, 0.9774422545997543, 0.9875882042142607, 0.9311297649447251, 0.9870976654467883, 0.9819531529544994, 0.9845102645550518, 0.9385169205515875, 0.9650225423346572, 0.9684079160211454, 0.9929627571956294, 0.9820649975070477, 0.9490042233579316, 0.9743673641250706, 0.9981895182120335, 1.0, 0.9886086602776313, 0.9546071062456174, 0.9312090890219316, 0.998346304608092, 0.9861044523173068, 0.9530364756852311, 0.9748440628494164, 0.9544798286482905, 0.9705294224826517, 0.9094744248432124, 0.9569581979854891, 0.94883350878219, 0.9957910365811066, 0.9318973665433022, 0.9133105585824423, 0.6136298657205701, 0.9986910150250455, 0.9304082787544341, 0.9750548440027598, 0.9605714605364046, 0.9304832175422302, 0.9729491123590005, 0.9473624883669061, 0.9749581942510052, 0.9889570005375281, 0.9757749205464855, 0.982622511213283, 0.9671928926173936, 0.9879571377208918, 0.8590238553570994, 0.9674817464708858, 0.9950031400081598, 0.9342366884667491, 0.9854878167936523, 0.9668050946777924, 0.9865680018321412, 0.9592335220983507, 0.9708101438963452, 0.9676754971425743, 0.9908689119697669, 0.939547690542635, 0.9965464082483337, 0.9791295357482975], 'ap_per_class': [0.798261516770083, 0.43409621273281823, 0.2412869648956915, 0.33338991011154423, 0.643989673434788, 0.4661070403116199, 0.5708605349681694, 0.22992517526686485, 0.290811714650094, 0.5521956033890785, 0.1111111111111111, 0.26967961253161504, 8.682872706374153e-05, 0.5962199111612693, 0.6364470493063128, 0.6225957446728733, 0.4743423431946613, 0.440257120230262, 0.0014487317074488595, 0.7194268626765796, 0.3990979954863266, 0.7231180527510417, 0.6347136756721002, 0.6919828543080532, 0.6508358270461096, 0.6432077538312595, 0.8591687714562444, 0.15482300451115336, 0.7107815168973376, 0.1801376948753798, 0.7550067734444975, 0.7746505125541476, 0.03833583830308094, 0.5640497407940053, 0.5522427899039085, 0.7539993407550185, 0.1285571295333604, 1.0, 0.27561197599844856, 0.28853200476627183, 0.5979063807852955, 0.008305873254238816, 0.657228270434223, 0.7188580351498972, 0.10732053668148289, 0.014100229259905386, 0.7726879865571599, 0.4616604771642314, 0.35082586135984745, 0.09923633897272179, 0.06641240783117212, 0.5743969820427434, 0.0032333576540893613, 4.96129128160112e-05, 0.5530668324935809, 0.4539355256258844, 0.5709420297444, 0.43435577765215466, 0.011689663515081904, 0.3701695695556145, 0.662993904665378, 0.037389957384400624, 0.16285462879247176, 0.4644651408812325, 0.8189657649633065, 0.7417980681778352, 0.7224901472706334, 0.020307228913833575, 0.6415641322500955, 0.6762376751526691, 0.0001706756314178682, 0.06687062387777483, 0.21250937404782574, 0.508058280903868, 0.023557031515704527, 0.019255967173351235, 0.554482092508999, 0.5439919676795605, 0.5947291617006402, 0.014539704035927196, 0.7320711019555867], 'class_info': [{'class_idx': 0, 'pretrain_idx': 1743, 'n_positives': np.float32(5310.0), 'auroc': 0.9699256643884834, 'ap': 0.798261516770083}, {'class_idx': 1, 'pretrain_idx': 755, 'n_positives': np.float32(123.0), 'auroc': 0.9863510319007285, 'ap': 0.43409621273281823}, {'class_idx': 2, 'pretrain_idx': 3881, 'n_positives': np.float32(6.0), 'auroc': 0.9866987663706865, 'ap': 0.2412869648956915}, {'class_idx': 3, 'pretrain_idx': 329, 'n_positives': np.float32(133.0), 'auroc': 0.9227513611817535, 'ap': 0.33338991011154423}, {'class_idx': 4, 'pretrain_idx': 649, 'n_positives': np.float32(158.0), 'auroc': 0.9829624748693043, 'ap': 0.643989673434788}, {'class_idx': 5, 'pretrain_idx': 14627, 'n_positives': np.float32(145.0), 'auroc': 0.9714270603597521, 'ap': 0.4661070403116199}, {'class_idx': 6, 'pretrain_idx': 2582, 'n_positives': np.float32(32.0), 'auroc': 0.9757659728856352, 'ap': 0.5708605349681694}, {'class_idx': 7, 'pretrain_idx': 12450, 'n_positives': np.float32(103.0), 'auroc': 0.8313529459018467, 'ap': 0.22992517526686485}, {'class_idx': 8, 'pretrain_idx': 13959, 'n_positives': np.float32(10.0), 'auroc': 0.9269267508163166, 'ap': 0.290811714650094}, {'class_idx': 9, 'pretrain_idx': 6880, 'n_positives': np.float32(10.0), 'auroc': 0.9985052877820557, 'ap': 0.5521956033890785}, {'class_idx': 10, 'pretrain_idx': 8963, 'n_positives': np.float32(1.0), 'auroc': 0.9999610134552313, 'ap': 0.1111111111111111}, {'class_idx': 11, 'pretrain_idx': 1100, 'n_positives': np.float32(9.0), 'auroc': 0.9969789664805527, 'ap': 0.26967961253161504}, {'class_idx': 12, 'pretrain_idx': 1283, 'n_positives': np.float32(34.0), 'auroc': 0.061787843531005866, 'ap': 8.682872706374153e-05}, {'class_idx': 13, 'pretrain_idx': 13098, 'n_positives': np.float32(33.0), 'auroc': 0.9247137328334597, 'ap': 0.5962199111612693}, {'class_idx': 14, 'pretrain_idx': 7712, 'n_positives': np.float32(98.0), 'auroc': 0.9626263358460371, 'ap': 0.6364470493063128}, {'class_idx': 15, 'pretrain_idx': 7800, 'n_positives': np.float32(906.0), 'auroc': 0.9499364186241482, 'ap': 0.6225957446728733}, {'class_idx': 16, 'pretrain_idx': 12813, 'n_positives': np.float32(357.0), 'auroc': 0.9367654884041754, 'ap': 0.4743423431946613}, {'class_idx': 17, 'pretrain_idx': 4357, 'n_positives': np.float32(603.0), 'auroc': 0.9550996303528894, 'ap': 0.440257120230262}, {'class_idx': 18, 'pretrain_idx': 4362, 'n_positives': np.float32(193.0), 'auroc': 0.6520455348535932, 'ap': 0.0014487317074488595}, {'class_idx': 19, 'pretrain_idx': 3179, 'n_positives': np.float32(909.0), 'auroc': 0.9783547427780748, 'ap': 0.7194268626765796}, {'class_idx': 20, 'pretrain_idx': 4367, 'n_positives': np.float32(225.0), 'auroc': 0.890504511390278, 'ap': 0.3990979954863266}, {'class_idx': 21, 'pretrain_idx': 12327, 'n_positives': np.float32(917.0), 'auroc': 0.9810363438822395, 'ap': 0.7231180527510417}, {'class_idx': 22, 'pretrain_idx': 3359, 'n_positives': np.float32(3178.0), 'auroc': 0.9668954103404138, 'ap': 0.6347136756721002}, {'class_idx': 23, 'pretrain_idx': 4645, 'n_positives': np.float32(701.0), 'auroc': 0.9774422545997543, 'ap': 0.6919828543080532}, {'class_idx': 24, 'pretrain_idx': 14207, 'n_positives': np.float32(407.0), 'auroc': 0.9875882042142607, 'ap': 0.6508358270461096}, {'class_idx': 25, 'pretrain_idx': 8417, 'n_positives': np.float32(1326.0), 'auroc': 0.9311297649447251, 'ap': 0.6432077538312595}, {'class_idx': 26, 'pretrain_idx': 14424, 'n_positives': np.float32(8888.0), 'auroc': 0.9870976654467883, 'ap': 0.8591687714562444}, {'class_idx': 27, 'pretrain_idx': 14411, 'n_positives': np.float32(29.0), 'auroc': 0.9819531529544994, 'ap': 0.15482300451115336}, {'class_idx': 28, 'pretrain_idx': 14409, 'n_positives': np.float32(231.0), 'auroc': 0.9845102645550518, 'ap': 0.7107815168973376}, {'class_idx': 29, 'pretrain_idx': 14430, 'n_positives': np.float32(103.0), 'auroc': 0.9385169205515875, 'ap': 0.1801376948753798}, {'class_idx': 30, 'pretrain_idx': 3799, 'n_positives': np.float32(3427.0), 'auroc': 0.9650225423346572, 'ap': 0.7550067734444975}, {'class_idx': 31, 'pretrain_idx': 3437, 'n_positives': np.float32(3861.0), 'auroc': 0.9684079160211454, 'ap': 0.7746505125541476}, {'class_idx': 32, 'pretrain_idx': 3439, 'n_positives': np.float32(6.0), 'auroc': 0.9929627571956294, 'ap': 0.03833583830308094}, {'class_idx': 33, 'pretrain_idx': 1651, 'n_positives': np.float32(509.0), 'auroc': 0.9820649975070477, 'ap': 0.5640497407940053}, {'class_idx': 34, 'pretrain_idx': 1439, 'n_positives': np.float32(2585.0), 'auroc': 0.9490042233579316, 'ap': 0.5522427899039085}, {'class_idx': 35, 'pretrain_idx': 10741, 'n_positives': np.float32(7794.0), 'auroc': 0.9743673641250706, 'ap': 0.7539993407550185}, {'class_idx': 36, 'pretrain_idx': 13317, 'n_positives': np.float32(6.0), 'auroc': 0.9981895182120335, 'ap': 0.1285571295333604}, {'class_idx': 37, 'pretrain_idx': 3432, 'n_positives': np.float32(2.0), 'auroc': 1.0, 'ap': 1.0}, {'class_idx': 38, 'pretrain_idx': 11964, 'n_positives': np.float32(86.0), 'auroc': 0.9886086602776313, 'ap': 0.27561197599844856}, {'class_idx': 39, 'pretrain_idx': 13985, 'n_positives': np.float32(92.0), 'auroc': 0.9546071062456174, 'ap': 0.28853200476627183}, {'class_idx': 40, 'pretrain_idx': 12681, 'n_positives': np.float32(677.0), 'auroc': 0.9312090890219316, 'ap': 0.5979063807852955}, {'class_idx': 41, 'pretrain_idx': 12680, 'n_positives': np.float32(3.0), 'auroc': 0.998346304608092, 'ap': 0.008305873254238816}, {'class_idx': 42, 'pretrain_idx': 2467, 'n_positives': np.float32(196.0), 'auroc': 0.9861044523173068, 'ap': 0.657228270434223}, {'class_idx': 43, 'pretrain_idx': 4432, 'n_positives': np.float32(9627.0), 'auroc': 0.9530364756852311, 'ap': 0.7188580351498972}, {'class_idx': 44, 'pretrain_idx': 13144, 'n_positives': np.float32(96.0), 'auroc': 0.9748440628494164, 'ap': 0.10732053668148289}, {'class_idx': 45, 'pretrain_idx': 12637, 'n_positives': np.float32(8.0), 'auroc': 0.9544798286482905, 'ap': 0.014100229259905386}, {'class_idx': 46, 'pretrain_idx': 6267, 'n_positives': np.float32(4678.0), 'auroc': 0.9705294224826517, 'ap': 0.7726879865571599}, {'class_idx': 47, 'pretrain_idx': 14115, 'n_positives': np.float32(3189.0), 'auroc': 0.9094744248432124, 'ap': 0.4616604771642314}, {'class_idx': 48, 'pretrain_idx': 5820, 'n_positives': np.float32(78.0), 'auroc': 0.9569581979854891, 'ap': 0.35082586135984745}, {'class_idx': 49, 'pretrain_idx': 5819, 'n_positives': np.float32(12.0), 'auroc': 0.94883350878219, 'ap': 0.09923633897272179}, {'class_idx': 50, 'pretrain_idx': 7420, 'n_positives': np.float32(3.0), 'auroc': 0.9957910365811066, 'ap': 0.06641240783117212}, {'class_idx': 51, 'pretrain_idx': 12844, 'n_positives': np.float32(3030.0), 'auroc': 0.9318973665433022, 'ap': 0.5743969820427434}, {'class_idx': 52, 'pretrain_idx': 12838, 'n_positives': np.float32(2.0), 'auroc': 0.9133105585824423, 'ap': 0.0032333576540893613}, {'class_idx': 53, 'pretrain_idx': 6644, 'n_positives': np.float32(6.0), 'auroc': 0.6136298657205701, 'ap': 4.96129128160112e-05}, {'class_idx': 54, 'pretrain_idx': 14667, 'n_positives': np.float32(68.0), 'auroc': 0.9986910150250455, 'ap': 0.5530668324935809}, {'class_idx': 55, 'pretrain_idx': 7941, 'n_positives': np.float32(2173.0), 'auroc': 0.9304082787544341, 'ap': 0.4539355256258844}, {'class_idx': 56, 'pretrain_idx': 7939, 'n_positives': np.float32(612.0), 'auroc': 0.9750548440027598, 'ap': 0.5709420297444}, {'class_idx': 57, 'pretrain_idx': 10474, 'n_positives': np.float32(681.0), 'auroc': 0.9605714605364046, 'ap': 0.43435577765215466}, {'class_idx': 58, 'pretrain_idx': 4280, 'n_positives': np.float32(7.0), 'auroc': 0.9304832175422302, 'ap': 0.011689663515081904}, {'class_idx': 59, 'pretrain_idx': 6426, 'n_positives': np.float32(890.0), 'auroc': 0.9729491123590005, 'ap': 0.3701695695556145}, {'class_idx': 60, 'pretrain_idx': 279, 'n_positives': np.float32(6480.0), 'auroc': 0.9473624883669061, 'ap': 0.662993904665378}, {'class_idx': 61, 'pretrain_idx': 8226, 'n_positives': np.float32(97.0), 'auroc': 0.9749581942510052, 'ap': 0.037389957384400624}, {'class_idx': 62, 'pretrain_idx': 4921, 'n_positives': np.float32(28.0), 'auroc': 0.9889570005375281, 'ap': 0.16285462879247176}, {'class_idx': 63, 'pretrain_idx': 11820, 'n_positives': np.float32(1254.0), 'auroc': 0.9757749205464855, 'ap': 0.4644651408812325}, {'class_idx': 64, 'pretrain_idx': 12521, 'n_positives': np.float32(3579.0), 'auroc': 0.982622511213283, 'ap': 0.8189657649633065}, {'class_idx': 65, 'pretrain_idx': 9689, 'n_positives': np.float32(224.0), 'auroc': 0.9671928926173936, 'ap': 0.7417980681778352}, {'class_idx': 66, 'pretrain_idx': 14359, 'n_positives': np.float32(117.0), 'auroc': 0.9879571377208918, 'ap': 0.7224901472706334}, {'class_idx': 67, 'pretrain_idx': 6930, 'n_positives': np.float32(5.0), 'auroc': 0.8590238553570994, 'ap': 0.020307228913833575}, {'class_idx': 68, 'pretrain_idx': 5478, 'n_positives': np.float32(2292.0), 'auroc': 0.9674817464708858, 'ap': 0.6415641322500955}, {'class_idx': 69, 'pretrain_idx': 12591, 'n_positives': np.float32(14.0), 'auroc': 0.9950031400081598, 'ap': 0.6762376751526691}, {'class_idx': 70, 'pretrain_idx': 12611, 'n_positives': np.float32(2.0), 'auroc': 0.9342366884667491, 'ap': 0.0001706756314178682}, {'class_idx': 71, 'pretrain_idx': 12597, 'n_positives': np.float32(21.0), 'auroc': 0.9854878167936523, 'ap': 0.06687062387777483}, {'class_idx': 72, 'pretrain_idx': 12605, 'n_positives': np.float32(353.0), 'auroc': 0.9668050946777924, 'ap': 0.21250937404782574}, {'class_idx': 73, 'pretrain_idx': 12604, 'n_positives': np.float32(298.0), 'auroc': 0.9865680018321412, 'ap': 0.508058280903868}, {'class_idx': 74, 'pretrain_idx': 12592, 'n_positives': np.float32(17.0), 'auroc': 0.9592335220983507, 'ap': 0.023557031515704527}, {'class_idx': 75, 'pretrain_idx': 12616, 'n_positives': np.float32(6.0), 'auroc': 0.9708101438963452, 'ap': 0.019255967173351235}, {'class_idx': 76, 'pretrain_idx': 10500, 'n_positives': np.float32(906.0), 'auroc': 0.9676754971425743, 'ap': 0.554482092508999}, {'class_idx': 77, 'pretrain_idx': 10072, 'n_positives': np.float32(14.0), 'auroc': 0.9908689119697669, 'ap': 0.5439919676795605}, {'class_idx': 78, 'pretrain_idx': 2247, 'n_positives': np.float32(3781.0), 'auroc': 0.939547690542635, 'ap': 0.5947291617006402}, {'class_idx': 79, 'pretrain_idx': 2324, 'n_positives': np.float32(3.0), 'auroc': 0.9965464082483337, 'ap': 0.014539704035927196}, {'class_idx': 80, 'pretrain_idx': 2322, 'n_positives': np.float32(1823.0), 'auroc': 0.9791295357482975, 'ap': 0.7320711019555867}], 'n_valid_classes': 81, 'all_probs': array([[0.9469001 , 0.18406163, 0.29062265, ..., 0.98713475, 0.9542943 ,
+        0.8921556 ],
+       [0.84816295, 0.692422  , 0.79325783, ..., 0.8988719 , 0.81959236,
+        0.80435735],
+       [0.8213202 , 0.38507104, 0.7492901 , ..., 0.9629595 , 0.8886864 ,
+        0.9227632 ],
+       ...,
+       [0.97706336, 0.32026756, 0.41123623, ..., 0.9980475 , 0.76822966,
+        0.85170686],
+       [0.9366087 , 0.5224485 , 0.4198774 , ..., 0.952904  , 0.94137853,
+        0.8991685 ],
+       [0.9411765 , 0.32230663, 0.35403386, ..., 0.9854754 , 0.7529583 ,
+        0.8560076 ]], dtype=float32), 'all_labels': array([[0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       ...,
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.]], dtype=float32)}
+Audio-only macro scores: AUROC 0.9251764778875423 cmAP 0.372178975916761
+Spatiotemporally-aware macro scores: AUROC 0.9444529916438207 cmAP: 0.42292688015884883
+SSW
+10
