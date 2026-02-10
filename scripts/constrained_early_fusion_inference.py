@@ -17,7 +17,7 @@ from typing import Dict, List
 from torch.utils.data import Dataset, DataLoader
 from tqdm import tqdm
 from early_fusion_classifier_head import *
-from clasp import SpatiotemporalEncoder
+from spatiotemporal_encoder import SpatiotemporalEncoder
 import librosa
 import json
 from birdset_preparation import load_birdset_data

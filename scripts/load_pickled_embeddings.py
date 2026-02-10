@@ -58,15 +58,7 @@ def load_all_embeddings(embeddings_dir = EMBEDDINGS_DIR):
                     
                     batches_dict[embedding_file] = batch_data
     return batches_dict
-def load_clasp_data(embeddings_dir = EMBEDDINGS_DIR):
-    data_dict = load_all_embeddings(embeddings_dir)
-    data_list = list(data_dict.values())
-    audio_stacked = torch.cat([item['audio_embeddings'] for item in data_list], dim=0)
-    context_stacked = np.concatenate([item['spatiotemporal_contexts'] for item in data_list], axis=0)
-    text_list = []
-    for item in data_list:
-        text_list += item['text_descriptions']
-    return audio_stacked, context_stacked, text_list
+
 def load_st_audio_data(embeddings_dir = EMBEDDINGS_DIR):
     data_dict = load_all_embeddings(embeddings_dir)
     data_list = list(data_dict.values())
