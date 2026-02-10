@@ -88,9 +88,8 @@ if gpus:
 #import torchaudio, torch, subprocess, shutil, sys, os, tempfile
 from pydub import AudioSegment
 from pydub.utils import which
-import subprocess
 from pathlib import Path
-import warnings
+from config import *
 # Force PyDub to use the binaries in ~/bin
 AudioSegment.converter = which("ffmpeg")
 AudioSegment.ffprobe   = which("ffprobe")
@@ -635,13 +634,6 @@ def process_mixing_batch_with_full_context(batch_spec, original_data, geo_aware_
         
         mixed_ids_list.append(f"mixed_{mix['mixed_sample_id']}_from_{primary_id}")
         successful_mix_ids.append(mix['mixed_sample_id'])
-    """# Save first mixed audio and stop
-    import soundfile as sf
-    mixed_np = mixed_audio_list[1].cpu().numpy()
-    sf.write('/scratch/e1583377/debug_mix.wav', mixed_np, 32000)
-    print("Saved first mix to /scratch/e1583377/debug_mix.wav - CHECK THIS FILE")
-    raise SystemExit("Stopping for audio verification")
-    """
     
     if not mixed_audio_list:
         print(f"? No valid mixed samples created for batch {batch_spec['batch_id']}")
@@ -920,15 +912,13 @@ def load_full_context_data(filepath):
 
 def main_with_precomputed_mixup(mixing_plan = ""):
     """Main pipeline with precomputed dataset-wide mixup."""
-    OUTPUT_PATH = '/scratch/e1583377/pickled_audio_embeds_mixed' + mixing_plan + "/"
-    os.makedirs(OUTPUT_PATH, exist_ok = True)
-    MIXUP_PLAN_PATH = Path(OUTPUT_PATH) / (mixing_plan + "inat_mixing_plan.json")
+    os.makedirs(MIXUP_TRAIN_SAVE_DIR, exist_ok = True)
+    MIXUP_PLAN_PATH = Path(MIXUP_TRAIN_SAVE_DIR) / (mixing_plan + "inat_mixing_plan.json")
     
     # Load your existing data
     prepared_train = prepare_for_spatiotemporal_encoder('all', temporal_encoder=encode_time)
     st_train, audio_paths_train, ids_train, y_train = prepared_train[0], prepared_train[5], prepared_train[2], torch.from_numpy(prepared_train[1]).long()
     d = "cuda"
-    ST_MODEL_PATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/sphere2vec/main/perch_v2_xc_non_fourier_spatiotemporal_encoder_lr_0001.pth"
     geo_aware_perch = GeoAwarePerch(load_st_encoder(ST_MODEL_PATH, 5, model_device=d, output_dim=14795), perch_model, output_dim=14795)
     geo_aware_perch.eval()
     

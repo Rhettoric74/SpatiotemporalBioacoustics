@@ -7,7 +7,6 @@ import torch.nn.functional as F
 # Your remaining imports
 import numpy as np
 import kagglehub
-from load_bioclip import load_bioclip
 from SpatialRelationEncoder import SphereMixScaleSpatialRelationEncoder
 from load_pickled_embeddings import load_st_audio_data, load_mixup_embeddings
 from typing import Dict, List
@@ -15,6 +14,7 @@ from torch.utils.data import Dataset, DataLoader, random_split
 from tqdm import tqdm
 from utils import AvgMeter
 import random
+from config import *
 
 
 class MixupAudioDataset(Dataset):
@@ -531,7 +531,7 @@ def train_classifier(
         print(f'  Train Loss: {avg_train_loss:.4f}, Train Acc: {train_acc:.2f}%')
         print("saving model...")
         num_experts = str(len(classifier_head.experts))
-        save_path = "/scratch/e1583377/models/balanced_mixture_of_" + num_experts + "_experts_early_fusion_classifier_lr_003_epoch_" + str(epoch) + "_no_st.pth"
+        save_path = MODEL_SAVE_DIR + "/balanced_mixture_of_" + num_experts + "_experts_early_fusion_classifier_lr_003_epoch_" + str(epoch) + "_no_st.pth"
         torch.save(classifier_head.state_dict(), save_path)
         
 
@@ -663,7 +663,7 @@ def train_mixup_classifier(
         
         # Save model
         num_experts = str(len(classifier_head.experts))
-        save_path = f"/scratch/e1583377/models/geospatial_mixup_last_ce_{num_experts}_experts_epoch_{epoch}.pth"
+        save_path = f"{MODEL_SAVE_DIR}/geospatial_mixup_last_ce_{num_experts}_experts_epoch_{epoch}.pth"
         torch.save(classifier_head.state_dict(), save_path)
     
     return classifier_head, history
@@ -799,7 +799,7 @@ def train_classifier(
     if best_model_state is not None:
         classifier_head.load_state_dict(best_model_state)
         print("Loaded best model from early stopping.")
-    save_path = f"/scratch/e1583377/models/balanced_mixture_of_4_experts_early_fusion_classifier_lr_0006_epoch_{epoch}" + st_suffix + "early_stopping.pth"
+    save_path = fMODEL_SAVE_DIR + "/balanced_mixture_of_4_experts_early_fusion_classifier_lr_0006_epoch_{epoch}" + st_suffix + "early_stopping.pth"
     torch.save(classifier_head.state_dict(), save_path)
     print(f"  Model saved: {save_path}")
     
@@ -839,7 +839,7 @@ def validate_classifier(classifier_head, val_loader, criterion, device):
     return avg_val_loss, val_acc
 """
 # Simple test
-def create_mixup_loader(embeddings_dir = '/scratch/e1583377/pickled_audio_embeds_mixed/'):
+def create_mixup_loader(embeddings_dir = MIXUP_TRAIN_SAVE_DIR):
     print("Testing mixup loader with precomputed ST embeddings...")
     
     # Load your ST encoder
@@ -867,7 +867,7 @@ def create_mixup_loader(embeddings_dir = '/scratch/e1583377/pickled_audio_embeds
 
 
 if __name__ == "__main__":
-    mixup_loader = create_mixup_loader("/scratch/e1583377/pickled_audio_embeds_mixedgeospatial_top_k_")
+    mixup_loader = create_mixup_loader(MIXUP_TRAIN_SAVE_DIR)
     device='cuda' if torch.cuda.is_available() else 'cpu'
     print(device)
     #classifier_head = SimpleClassifierHead(st_embedding_dim = 0, dropout = 0.3)
@@ -877,8 +877,7 @@ if __name__ == "__main__":
     classifier_head = BalancedMoE_ST_EmbeddingClassifierHead(st_embedding_dim = 165, st_hidden_dim = 512, num_experts = 4)
     # old code for non-mixup data
     
-    DATA_DIR = "/scratch/e1583377/pickled_audio_embeds_3_random_windows_corrected/"
-    audio_embeddings, spatiotemporal_context, labels = load_st_audio_data(DATA_DIR)
+    audio_embeddings, spatiotemporal_context, labels = load_st_audio_data(TRAIN_SAVE_DIR)
     print(audio_embeddings.shape, spatiotemporal_context.shape, len(labels))
     print("num_labels", labels.unique().numel())
     # Create dataset
@@ -910,7 +909,5 @@ if __name__ == "__main__":
         device=device
     )
     print(history)
-    #save_path = "/home/svu/e1583377/ST-Geo-Perch/models/mixture_of_4_experts_early_fusion_classifier_lr_0001.pth"
-    #torch.save(trained_classifier.state_dict(), save_path)
     
     

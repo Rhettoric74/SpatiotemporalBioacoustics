@@ -7,7 +7,6 @@ import torch.nn.functional as F
 # Your remaining imports
 import numpy as np
 import kagglehub
-from load_bioclip import load_bioclip
 from SpatialRelationEncoder import SphereMixScaleSpatialRelationEncoder
 from load_pickled_embeddings import load_st_audio_data
 from typing import Dict, List
@@ -19,6 +18,7 @@ from early_fusion_classifier_head import BalancedMoE_ST_EmbeddingClassifierHead,
 # Sample data preparation
 import pandas as pd
 import numpy as np
+from config import *
 class Coords_ST_AudioDataset(Dataset):
     def __init__(self, audio_embeddings: torch.Tensor, 
                  spatiotemporal_context: torch.Tensor, spatiotemporal_encodings, labels):
@@ -62,10 +62,9 @@ if __name__ == '__main__':
     num_epochs = 3
     num_experts = 10
     classifier_head = BalancedMoE_ST_EmbeddingClassifierHead(st_embedding_dim = 165, st_hidden_dim = 512, num_experts = num_experts)
-    geo_aware_classifier_dict = torch.load("/scratch/e1583377/models/geospatial_mixup_ce_" + str(num_experts) + "_experts_epoch_" + str(num_epochs) + ".pth")
+    geo_aware_classifier_dict = torch.load(MODEL_SAVE_DIR + "/geospatial_mixup_ce_" + str(num_experts) + "_experts_epoch_" + str(num_epochs) + ".pth")
     classifier_head.load_state_dict(geo_aware_classifier_dict)
-    DATA_DIR = "/scratch/e1583377/pickled_audio_embeds_3_random_windows_corrected/"
-    audio_embeddings, spatiotemporal_context, labels = load_st_audio_data(DATA_DIR)
+    audio_embeddings, spatiotemporal_context, labels = load_st_audio_data(TRAIN_SAVE_DIR)
     print(audio_embeddings.shape, spatiotemporal_context.shape, len(labels))
     print("num_labels", labels.unique().numel())
     # Create dataset

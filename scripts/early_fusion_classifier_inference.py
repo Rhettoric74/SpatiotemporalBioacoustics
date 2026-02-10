@@ -13,24 +13,25 @@ from early_fusion_classifier_head import *
 from spatiotemporal_encoder import SpatiotemporalEncoder
 import librosa
 import json
-SAVE_DIR = "/scratch/e1583377/pickled_birdset_embeds/"
+from config import *
+
 if __name__ == '__main__':
     subset = "HSN"
     num_epochs = 1
     no_st_epochs = 4
     num_experts = 4
     torch_device = "cuda"
-    prediction_save_path = "/home/svu/e1583377/ST-Geo-Perch/predictions/geospatial_mixup_last_balanced_mixture_of_" + str(num_experts) + "_experts_early_fusion_classifier_lr_0006_epoch_" + str(num_epochs + 1) + "_" + subset + ".pth"
+    prediction_save_path = PREDICTIONS_SAVE_DIR + "geospatial_mixup_last_balanced_mixture_of_" + str(num_experts) + "_experts_early_fusion_classifier_lr_0006_epoch_" + str(num_epochs + 1) + "_" + subset + ".pth"
     base_classifier = BalancedMoE_ST_EmbeddingClassifierHead(st_embedding_dim = 0, st_hidden_dim = 0, num_experts = num_experts)
     geo_aware_classifier = BalancedMoE_ST_EmbeddingClassifierHead(st_embedding_dim = 165, st_hidden_dim = 512, num_experts = num_experts)
     
-    base_classifier_dict = torch.load("/scratch/e1583377/models/geospatial_mixup_ce_" + str(num_experts) + "_experts_epoch_" + str(no_st_epochs) + "_no_st.pth")
-    geo_aware_classifier_dict = torch.load("/scratch/e1583377/models/geospatial_mixup_last_ce_" + str(num_experts) + "_experts_epoch_" + str(num_epochs) + ".pth")
+    base_classifier_dict = torch.load(MODEL_SAVE_DIR + "/geospatial_mixup_ce_" + str(num_experts) + "_experts_epoch_" + str(no_st_epochs) + "_no_st.pth")
+    geo_aware_classifier_dict = torch.load(MODEL_SAVE_DIR + "/geospatial_mixup_last_ce_" + str(num_experts) + "_experts_epoch_" + str(num_epochs) + ".pth")
     base_classifier.load_state_dict(base_classifier_dict)
     geo_aware_classifier.load_state_dict(geo_aware_classifier_dict)
     base_classifier = base_classifier.to(torch_device)
     geo_aware_classifier = geo_aware_classifier.to(torch_device)
-    CLASS_LABELS_FILEPATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/assets/perch_v2_label_mapping.json"
+    CLASS_LABELS_FILEPATH = "metadata/perch_v2_label_mapping.json"
     with open(CLASS_LABELS_FILEPATH) as f:
         perch_label_mapping = json.load(f)
     location_encoder = SphereMixScaleSpatialRelationEncoder(160, frequency_num = 32)
@@ -41,7 +42,7 @@ if __name__ == '__main__':
     ground_truth = []
     base_classifier.eval()
     geo_aware_classifier.eval()
-    with open(SAVE_DIR + subset + ".pkl", "rb") as f:
+    with open(EVAL_SAVE_DIR + subset + ".pkl", "rb") as f:
         birdset_data = pickle.load(f)
     with torch.no_grad():
         for audio_embeds, st_context, labels in zip(birdset_data["embeddings"], birdset_data['st_context'], birdset_data["labels"]):

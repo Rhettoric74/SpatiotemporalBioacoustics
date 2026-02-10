@@ -11,7 +11,7 @@ tf.experimental.numpy.experimental_enable_numpy_behavior()
 from spatiotemporal_encoder import SpatiotemporalEncoder
 import json
 import librosa
-CLASS_LABELS_FILEPATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/assets/perch_v2_label_mapping.json"
+CLASS_LABELS_FILEPATH = "metadata/perch_v2_label_mapping.json"
 # Get Perch 2.0 from Kaggle
 def load_perch_model(url = 'https://www.kaggle.com/models/google/bird-vocalization-classifier/tensorFlow2/perch_v2/2'):
     #TODO: Currently using perch 1.0, need update this to Perch 2.0

@@ -9,15 +9,15 @@ import os
 import numpy as np
 import math
 import gc
+from config import *
 
-SAVE_DIR = "/scratch/e1583377/pickled_birdset_embeds/"
 MIN_YEAR, MAX_YEAR = 2005, 2025
 
 def load_perch_gpu_model(url = 'https://www.kaggle.com/models/google/bird-vocalization-classifier/tensorFlow2/perch_v2/2'):
     return hub.load(url)
 
 def load_birdset_data(subset = "NES"):
-    dataset = load_dataset("DBD-research-group/BirdSet", subset, cache_dir = "/scratch/e1583377/huggingface/")
+    dataset = load_dataset("DBD-research-group/BirdSet", subset, cache_dir = HF_SAVE_DIR)
     dataset = dataset.cast_column("audio", Audio(sampling_rate=32_000))
     return dataset["test_5s"]
 
@@ -82,7 +82,7 @@ def process_and_save_batch(perch_model, audio_batch, st_batch, label_batch, task
     perch_output = perch_model.signatures['serving_default'](inputs=audio_batch)['embedding'].numpy()
     
     # Save this batch immediately
-    batch_save_dir = os.path.join(SAVE_DIR, task, "batches")
+    batch_save_dir = os.path.join(EVAL_SAVE_DIR, task, "batches")
     os.makedirs(batch_save_dir, exist_ok=True)
     
     batch_filename = os.path.join(batch_save_dir, f"batch_{batch_idx:06d}.pkl")

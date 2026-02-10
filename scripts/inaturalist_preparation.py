@@ -3,8 +3,8 @@ import json
 import numpy as np
 from sklearn.model_selection import train_test_split
 import math
-METADATA_PATH = "/scratch/e1583377/inat_metadata.csv"
-SPECIES_NAMES_FILEPATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/assets/perch_v2_labels.csv"
+METADATA_PATH = "metadata/inat_metadata.csv"
+SPECIES_NAMES_FILEPATH = "metadata/perch_v2_labels.csv"
 COLUMNS = ["gbifID", "day", "month", "year", "speciesKey", "decimalLatitude", "decimalLongitude", "species", "occurrenceID", "eventDate"]
 def load_inat_data(path = METADATA_PATH, relevant_columns = COLUMNS):
     all_data = pd.read_csv(path, sep="\t")

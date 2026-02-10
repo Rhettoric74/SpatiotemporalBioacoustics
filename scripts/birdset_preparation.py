@@ -9,7 +9,7 @@ import os
 import numpy as np
 import math
 import kagglehub
-SAVE_DIR = "/scratch/e1583377/pickled_birdset_embeds/"
+from config import EVAL_SAVE_DIR as SAVE_DIR
 MIN_YEAR, MAX_YEAR = 2005, 2025
 def load_perch_gpu_model(url = 'https://www.kaggle.com/models/google/bird-vocalization-classifier/tensorFlow2/perch_v2/2'):
     return hub.load(url)

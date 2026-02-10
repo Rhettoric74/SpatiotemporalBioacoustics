@@ -32,8 +32,8 @@ if __name__ == '__main__':
     base_classifier = BalancedMoE_ST_EmbeddingClassifierHead(st_embedding_dim = 0, st_hidden_dim = 0, num_experts = num_experts)
     geo_aware_classifier = BalancedMoE_ST_EmbeddingClassifierHead(st_embedding_dim = 165, st_hidden_dim = 512, num_experts = num_experts)
     
-    base_classifier_dict = torch.load("/scratch/e1583377/models/geospatial_mixup_ce_" + str(num_experts) + "_experts_epoch_" + str(no_st_epochs) + "_no_st.pth")
-    geo_aware_classifier_dict = torch.load("/scratch/e1583377/models/geospatial_mixup_ce_" + str(num_experts) + "_experts_epoch_" + str(num_epochs) + ".pth")
+    base_classifier_dict = torch.load(MODEL_SAVE_DIR + "/geospatial_mixup_ce_" + str(num_experts) + "_experts_epoch_" + str(no_st_epochs) + "_no_st.pth")
+    geo_aware_classifier_dict = torch.load(MODEL_SAVE_DIR + "/geospatial_mixup_ce_" + str(num_experts) + "_experts_epoch_" + str(num_epochs) + ".pth")
     base_classifier.load_state_dict(base_classifier_dict)
     geo_aware_classifier.load_state_dict(geo_aware_classifier_dict)
     base_classifier = base_classifier.to(torch_device)
@@ -44,11 +44,11 @@ if __name__ == '__main__':
     print(dataset_ebird_codes[:10])
 
     # Your model's eBird codes (in the order of model outputs)
-    CLASS_LABELS_FILEPATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/assets/perch_v2_label_mapping.json"
+    CLASS_LABELS_FILEPATH = "metadata/perch_v2_label_mapping.json"
     with open(CLASS_LABELS_FILEPATH) as f:
         perch_label_mapping = json.load(f)
     model_ebird_codes = [perch_label_mapping[str(i)] for i in range(len(perch_label_mapping))]
-    CLASS_LABELS_FILEPATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/assets/perch_v2_label_mapping.json"
+    CLASS_LABELS_FILEPATH = "metadata/perch_v2_label_mapping.json"
     with open(CLASS_LABELS_FILEPATH) as f:
         perch_label_mapping = json.load(f)
     # Create mapping from dataset eBird codes to model indices

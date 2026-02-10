@@ -2,7 +2,7 @@ import pickle
 from birdset_preparation import load_birdset_data
 import json
 import numpy as np
-CLASS_LABELS_FILEPATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/assets/perch_v2_label_mapping.json"
+CLASS_LABELS_FILEPATH = "metadata/perch_v2_label_mapping.json"
 def check_labels_in_perch(labels, perch_labels):
     for label in labels:
         if label not in perch_labels:

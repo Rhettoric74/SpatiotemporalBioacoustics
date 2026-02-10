@@ -118,14 +118,13 @@ import requests
 from inaturalist_preparation import encode_time, encode_time_fourier, prepare_for_spatiotemporal_encoder
 import concurrent.futures
 from tqdm import tqdm
-OUTPUT_PATH = '/scratch/e1583377/pickled_audio_embeds_3_random_windows_corrected/'
 import time
 import random
 import tempfile
 
 import numpy as np
 import torch
-
+from config import *
 
 
 def chunked(iterable, n):
@@ -289,7 +288,7 @@ def load_audio_from_bytes(data: bytes, target_sr: int, url: str | None = None):
 RATE_LIMIT_DELAY   = 1.5
 JITTER             = 0.5
 BACKOFF_EXP        = 2.0
-GLOBAL_BAN_FILE = Path("/scratch/e1583377/cdn_ban.flag")
+GLOBAL_BAN_FILE = Path("cdn_ban.flag")
 BAN_COOLDOWN    = 45 * 60          # 45 min
 
 def wait_out_ban():
@@ -451,7 +450,6 @@ if __name__ == '__main__':
     st_train, audio_paths_train, ids_train, y_train = prepared_train[0], prepared_train[5], prepared_train[2], torch.from_numpy(prepared_train[1]).long()
     print("data prepared!")
     d = "cuda"
-    ST_MODEL_PATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/sphere2vec/main/perch_v2_xc_non_fourier_spatiotemporal_encoder_lr_0001.pth"
     geo_aware_perch = GeoAwarePerch(load_st_encoder(ST_MODEL_PATH, 5, model_device=d, output_dim=14795), perch_model, output_dim=14795) 
     geo_aware_perch.eval() 
     batch_size = 128
@@ -460,7 +458,7 @@ if __name__ == '__main__':
     with torch.no_grad():
         while i * batch_size < len(y_train):
             slice_end = min(batch_size * (i + 1), len(y_train))
-            outfile = OUTPUT_PATH + "inaturalist_" + str(batch_size * i) + "-" + str(slice_end) + ".pkl"
+            outfile = TRAIN_SAVE_DIR + "inaturalist_" + str(batch_size * i) + "-" + str(slice_end) + ".pkl"
             
             if not os.path.exists(outfile):
                 # Get the full batch first

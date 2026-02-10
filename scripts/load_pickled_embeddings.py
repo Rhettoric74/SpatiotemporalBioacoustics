@@ -5,12 +5,13 @@ import pickle
 import json
 import random
 import pandas as pd
+from config import *
 
-EMBEDDINGS_DIR = "/scratch/e1583377/pickled_audio_embeds_peak_select_finally_corrected/"
-MIXUP_EMBEDDINGS_DIR = "/scratch/e1583377/pickled_audio_embeds_mixed/"
-LABEL_MAPPING_PATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/assets/perch_v2_label_mapping.json"
-TEXT_DESCRIPTIONS_PATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/assets/species_descriptions.json"
-SPECIES_NAMES_PATH = "/home/svu/e1583377/Spatial_Perch_Transfer_Learning/assets/perch_v2_labels.csv"
+EMBEDDINGS_DIR = TRAIN_SAVE_DIR
+MIXUP_EMBEDDINGS_DIR = MIXUP_TRAIN_SAVE_DIR
+LABEL_MAPPING_PATH = "metadata/perch_v2_label_mapping.json"
+TEXT_DESCRIPTIONS_PATH = "metadata/species_descriptions.json"
+SPECIES_NAMES_PATH = "metadata/perch_v2_labels.csv"
 
 with open(LABEL_MAPPING_PATH) as f:
     label_mapping = json.load(f)
@@ -207,10 +208,9 @@ def load_mixup_embeddings(embeddings_dir = MIXUP_EMBEDDINGS_DIR):
 
 # Test the loading
 if __name__ == "__main__":
-    DATA_DIR = "/scratch/e1583377/pickled_audio_embeds_mixed/"
     
     # Load mixup data
-    mixup_data = load_mixup_embeddings(DATA_DIR)
+    mixup_data = load_mixup_embeddings(MIXUP_EMBEDDINGS_DIR)
     
     if mixup_data:
         print(f"\nLoaded mixup data keys: {mixup_data.keys()}")
