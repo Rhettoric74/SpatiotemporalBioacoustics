@@ -1,5 +1,6 @@
 # SpatiotemporalBioacoustics
-Repository for code from my PhD research project on spatiotemporally aware bioacoustic classification models.
+Repository for code from my PhD research project on spatiotemporally aware bioacoustic classification models. This work has been accepted as a full paper in the applications track at [ACM SIGSPATIAL](https://sigspatial2026.sigspatial.org/application-accepted/) 2026.
+
 *Introduction*
 Traditional bioacoustic classification models aim to predict which animal species is/are vocalizing in a given audio sample, based on learned features from the audio. These models are usually trained on data from around the world and then apply transfer learning to train a classifier suited to a specific PAM dataset, which often focuses on a specific, narrow spatiotemporal range (e.g., a collection of recordings from within a national park over the course of one summer). To reduce the need for transfer learning, which requires costly manual annotation, we propose a method called **S**patiotemporal **M**ixture **o**f **R**egional **E**xperts (**SMoRE**) which incorporates the spatiotemporal context of where and when audio was recorded during training to automatically align class predictions with the species likely to be present in the spatiotempooral context where the data was recorded.
 ![Motivation for Spatiotemporal Bioacoustics](assets/st_bioacoustics_motivation_figure.png)
